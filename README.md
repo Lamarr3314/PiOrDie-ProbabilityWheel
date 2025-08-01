@@ -17,8 +17,8 @@ The loser of the game must face a consequence and the winner can brag about thei
 
 # Design and Building
 We devised the game with the object of completing two main automated tasks: data collection and data analysis. To collect the data, we make use of nfc(near field communication) tags placed at the back of each segment of the wheel. This technology is similar to the “tap to pay” technology used within your iPhones or credit cards except as opposed to reading your credit card information, we are reading the distinct id of that specific nfc tag.
-![Image of NFC Model](https://github.com/Lamarr3314/PiOrDie-ProbabilityWheel/blob/main/media/img1.jpg)
-![Image of NFC Tag](https://github.com/Lamarr3314/PiOrDie-ProbabilityWheel/blob/main/media/img2.png)
+![Image of NFC Model](https://github.com/Lamarr3314/PiOrDie-ProbabilityWheel/blob/main/media/img1.png)
+![Image of NFC Tag](https://github.com/Lamarr3314/PiOrDie-ProbabilityWheel/blob/main/media/img2.jpg)
 Within our program, each tag is then paired with a corresponding point value. To read each nfc tag, there is a rfid chip(pn532) that is placed at the back of the wheel. The catch with nfc, however, is that the signal needs to be within 3cm of the chip. With typical spin the wheel games, that would be impossible because the wheel can land at any portion of each segment. To combat this issue, we 3d modeled two disks that have magnets with opposing polarity. This makes sure that on every roll, the wheel lands exactly in the center and the nfc tag is within the 3cm limit of the nfc chip. 
 ![Image of NFC Model](https://github.com/Lamarr3314/PiOrDie-ProbabilityWheel/blob/main/media/img0.png)
 ![Image of NFC Tag](https://github.com/Lamarr3314/PiOrDie-ProbabilityWheel/blob/main/media/img3.jpg)
